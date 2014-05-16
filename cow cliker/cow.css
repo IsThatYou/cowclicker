@@ -1,0 +1,35 @@
+#title {
+	
+	color: black;
+  	font-size:24px;
+  	padding: 10px 16px;
+  	border: 2px solid black;
+  	background: #0B1013;
+ 	 background: linear-gradient(to bottom, #0B1013 0%,white 100%);
+  	display:inline-block;
+  	border-radius: 10px;
+    position:relative;
+
+	
+
+
+}
+#titlefield {
+	position:relative;
+  display:table-cell;
+  height: 100%;
+  	overflow:hidden;
+  text-align: center;
+  vertical-align: left;
+	
+
+
+}
+
+#volume {
+	position: absolute;
+}
+
+#cow {
+  position:relative;
+}
