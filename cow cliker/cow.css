@@ -87,6 +87,16 @@
   background-repeat: no-repeat;
   
 }
+.clone{
+  position:absolute;
+  top:225px;
+  left: 270px;
+  background-image: url(cow.png);
+  background-size:contain;
+  width:150px;
+  height:120px;
+  background-repeat: no-repeat;
+}
 
 button {
   position: relative;

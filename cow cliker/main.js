@@ -1,5 +1,5 @@
 var score = 0;
-var mps = 1;
+var mps = 5000;
 var limit1 = 25;
 var limit2 = 200;
 var limit3 = 2000;
@@ -72,6 +72,13 @@ function Clone(){
 		var cereal = document.getElementById("clone");
 		cereal.innerHTML = limit4 + ' CM<sup>2</sup><a href="javascript:Clone();">Massive Clone</a></li>';
 		volume.innerHTML = score + ' CM<sup>2</sup>';
+		randl = parseInt(Math.floor(Math.random() * 480 + 300));
+		randt = parseInt(Math.floor(Math.random() * 280 + 150));
+		$('#body').append('<div id = "clone-' + limit4 + '" class = "clone"</div>');
+		$("#clone-"+ limit4 + "").css('top', randt);
+		$("#clone-"+ limit4 + "").css('left', randl);
+
+		
 	}
 }
 
