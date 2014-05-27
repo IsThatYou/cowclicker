@@ -1,5 +1,5 @@
 var score = 0;
-var mps = 5000;
+var mps = 1;
 var limit1 = 25;
 var limit2 = 200;
 var limit3 = 2000;
@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 function init() {
 	animation();
+	
 	
 
 	};
