@@ -26,7 +26,10 @@ function plusmethane(){
 	var volume = document.getElementById("volume");
 	score += mps
 	volume.innerHTML = score + ' CM<sup>2</sup>';
+	var methaneperclick = document.getElementById('mps');
+	methaneperclick.innerHTML = mps + ' CM<sup>2</sup>' + 'per click';
 	callMethane();
+
 
 };
 
@@ -52,6 +55,16 @@ function Grass(){
 		var cereal = document.getElementById("grass");
 		cereal.innerHTML = limit2 + ' CM<sup>2</sup><a href="javascript:Grass();">Bioengineered Grass</a></li>';
 		volume.innerHTML = score + ' CM<sup>2</sup>';
+		randl = randleft()
+		randt = parseInt(Math.floor(Math.random() * 150 + 350));
+	
+		$('#body').append('<div id = "grass-' + limit2 + '" class = "grass"</div>');
+		$("#grass-"+ limit2 + "").css('top', randt);
+		$("#grass-"+ limit2 + "").css('left', randl);
+				
+
+		
+
 	}
 }
 function Cake(){
@@ -74,7 +87,7 @@ function Clone(){
 		cereal.innerHTML = limit4 + ' CM<sup>2</sup><a href="javascript:Clone();">Massive Clone</a></li>';
 		volume.innerHTML = score + ' CM<sup>2</sup>';
 		randl = parseInt(Math.floor(Math.random() * 480 + 300));
-		randt = parseInt(Math.floor(Math.random() * 280 + 150));
+		randt = randtop
 		$('#body').append('<div id = "clone-' + limit4 + '" class = "clone"</div>');
 		$("#clone-"+ limit4 + "").css('top', randt);
 		$("#clone-"+ limit4 + "").css('left', randl);
@@ -102,5 +115,10 @@ function Rain(){
 		var cereal = document.getElementById("grass");
 		cereal.innerHTML = limit6 + ' CM<sup>2</sup><a href="javascript:Rain();">Rainbow</a></li>';
 		volume.innerHTML = score + ' CM<sup>2</sup>';
+		randl = parseInt(Math.floor(Math.random() * 100 + 200));
+		randt = parseInt(Math.floor(Math.random() * 50 + 70));
+		$('#body').append('<div id = "rain-' + limit6 + '" class = "rain"</div>');
+		$("#rain-"+ limit6 + "").css('top', randt);
+		$("#rain-"+ limit6 + "").css('left', randl);
 	}
 }

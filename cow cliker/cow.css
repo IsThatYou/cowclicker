@@ -24,8 +24,9 @@
 #volumnfield {
   width:1270px;
   float:left;
-  height:50px;
+  height:70px;
   text-align: center;
+  
 }
 #titlefield {
 	position:relative;
@@ -35,13 +36,18 @@
   text-align: center;
   vertical-align: left;
 	
-
-
 }
 
 #volume {
 	position: absolute;
   left:550px;
+}
+#mps{
+  position: absolute;
+  left:580px;
+  top: 100px;
+  font-size:24px;
+  color:black;
 }
 #cowfield {
  position:relative;
@@ -91,13 +97,32 @@
   position:absolute;
   top:225px;
   left: 270px;
-  background-image: url(cow.png);
+  background-image: url(img/cow.png);
   background-size:contain;
   width:150px;
   height:120px;
   background-repeat: no-repeat;
 }
-
+.rain{
+  position:absolute;
+  top:225px;
+  left: 270px;
+  background-image: url(img/rainbow.png);
+  background-size:contain;
+  width:70%;
+  height:100%;
+  background-repeat: no-repeat;
+}
+.grass{
+  position:absolute;
+  top:225px;
+  left: 270px;
+  background-image: url(img/grass.png);
+  background-size:contain;
+  width:80px;
+  height:100px;
+  background-repeat: no-repeat;
+}
 button {
   position: relative;
   border-radius: 20px;
