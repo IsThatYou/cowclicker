@@ -65,12 +65,12 @@
   width:640px;
   height:460px;
   position:relative;
-  background-image:url(cow.png);
+  background-image:url(img/cow.png);
   background-size: contain;
   z-index: 99;
 }
 #cow:active {
-  background-image: url(cow2.png);
+  background-image: url(img/cow2.png);
   background-size: contain;
 }
 #cow:hover {
@@ -80,7 +80,7 @@
   position:absolute;
   top:225px;
   left: 270px;
-  background-image: url(methane.png);
+  background-image: url(img/methane.png);
   background-size:contain;
   width:200px;
   height:160px;
